@@ -19,7 +19,23 @@ fun main() {
 }
 
 fun sortedSquares(nums: IntArray): IntArray {
-    return nums.onEachIndexed { index, i ->
-        nums[index] = i * i
-    }.sortedArray()
+    for(i in nums.indices){
+        val highIndex = nums.size - i - 1
+        if(highIndex < i){
+            break
+        }
+        if(highIndex == i){
+            nums[i] = nums[i] * nums[i]
+            break
+        }
+
+        val lowValue = nums[i]
+        val highValue = nums[highIndex]
+
+        nums[i] = lowValue * lowValue
+        nums[highIndex] = highValue * highValue
+
+    }
+
+    return nums.sortedArray()
 }
