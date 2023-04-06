@@ -57,16 +57,16 @@ fun maxAreaOfIsland(grid: Array<IntArray>): Int {
     return result
 }
 
-fun dfs(grid: Array<IntArray>, r: Int, s: Int): Int {
+fun dfs(grid: Array<IntArray>, r: Int, c: Int): Int {
     var islandSize = 0
-    if (grid[r][s] == 1) {
+    if (grid[r][c] == 1) {
         islandSize++
-        grid[r][s] = 0
+        grid[r][c] = 0
 
-        if (r >= 1) islandSize += dfs(grid, r - 1, s)
-        if (r + 1 < grid.size) islandSize += dfs(grid, r + 1, s)
-        if (s >= 1) islandSize += dfs(grid, r, s - 1)
-        if (s + 1 < grid[0].size) islandSize += dfs(grid, r, s + 1)
+        if (r >= 1) islandSize += dfs(grid, r - 1, c)
+        if (r + 1 < grid.size) islandSize += dfs(grid, r + 1, c)
+        if (c >= 1) islandSize += dfs(grid, r, c - 1)
+        if (c + 1 < grid[0].size) islandSize += dfs(grid, r, c + 1)
     }
     return islandSize
 }
