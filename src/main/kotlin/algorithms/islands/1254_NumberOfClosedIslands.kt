@@ -1,4 +1,4 @@
-package algorithms
+package algorithms.islands
 
 /*
 Given a 2D grid consists of 0s (land) and 1s (water).
