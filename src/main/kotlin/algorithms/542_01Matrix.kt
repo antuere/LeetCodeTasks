@@ -14,6 +14,6 @@ fun main() {
 
 }
 
-fun updateMatrix(mat: Array<IntArray>): Array<IntArray> {
-
-}
+//fun updateMatrix(mat: Array<IntArray>): Array<IntArray> {
+//
+//}
