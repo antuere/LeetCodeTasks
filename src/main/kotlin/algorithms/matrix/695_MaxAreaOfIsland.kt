@@ -1,4 +1,4 @@
-package algorithms.islands
+package algorithms.matrix
 
 /*
 You are given an m x n binary matrix grid.

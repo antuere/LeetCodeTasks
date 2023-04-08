@@ -1,4 +1,4 @@
-package algorithms
+package algorithms.matrix
 
 /*
 An image is represented by an m x n integer
