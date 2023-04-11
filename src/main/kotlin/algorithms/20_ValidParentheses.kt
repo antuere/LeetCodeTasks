@@ -27,8 +27,6 @@ fun main(){
     println("Result is ${isValid("(){}[]")}")
 }
 
-
-
 fun isValid(s: String): Boolean {
     if(s.length % 2 == 1) return false
 
