@@ -21,6 +21,7 @@ fun main() {
     val result4 = rotate(nums = intArrayOf(1, 2, 3, 4, 5, 6), k = 11)
     val result5 = rotate(nums = intArrayOf(1, 2), k = 5)
 
+
     println("Result1 is ${result1.toList()}")
     println("Result2 is ${result2.toList()}")
     println("Result3 is ${result3.toList()}")
